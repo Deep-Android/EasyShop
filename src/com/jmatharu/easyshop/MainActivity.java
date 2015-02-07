@@ -21,9 +21,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+@SuppressWarnings("deprecation")
 public class MainActivity extends Activity {
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
+	@SuppressWarnings("deprecation")
 	private ActionBarDrawerToggle mDrawerToggle;
 
 	// nav drawer title
@@ -39,6 +41,7 @@ public class MainActivity extends Activity {
 	private ArrayList<NavDrawerItem> navDrawerItems;
 	private NavDrawerListAdapter adapter;
 
+	@SuppressWarnings("deprecation")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -62,7 +65,7 @@ public class MainActivity extends Activity {
 		// Home
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons
 				.getResourceId(0, -1)));
-		// Find People
+		// To Do list
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons
 				.getResourceId(1, -1)));
 		// Photos
@@ -138,6 +141,7 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// toggle nav drawer on selecting action bar app icon/title
@@ -175,7 +179,7 @@ public class MainActivity extends Activity {
 			fragment = new HomeFragment();
 			break;
 		case 1:
-			fragment = new FindPeopleFragment();
+			fragment = new ToDoListFragment();
 			break;
 		case 2:
 			fragment = new PhotosFragment();
@@ -221,6 +225,7 @@ public class MainActivity extends Activity {
 	 * onPostCreate() and onConfigurationChanged()...
 	 */
 
+	@SuppressWarnings({ "deprecation" })
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
@@ -228,6 +233,7 @@ public class MainActivity extends Activity {
 		mDrawerToggle.syncState();
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public void onConfigurationChanged(Configuration newConfig) {
 		super.onConfigurationChanged(newConfig);
