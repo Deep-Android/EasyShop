@@ -1,4 +1,4 @@
-package info.androidhive.slidingmenu.model;
+package com.jmatharu.easyshop.model;
 
 public class NavDrawerItem {
 	

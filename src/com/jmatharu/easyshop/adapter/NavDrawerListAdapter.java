@@ -1,7 +1,6 @@
-package info.androidhive.slidingmenu.adapter;
+package com.jmatharu.easyshop.adapter;
 
 
-import info.androidhive.slidingmenu.model.NavDrawerItem;
 
 import java.util.ArrayList;
 
@@ -15,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.jmatharu.easyshop.R;
+import com.jmatharu.easyshop.model.NavDrawerItem;
 
 public class NavDrawerListAdapter extends BaseAdapter {
 	

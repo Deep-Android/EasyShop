@@ -1,9 +1,10 @@
 package com.jmatharu.easyshop;
 
-import info.androidhive.slidingmenu.adapter.NavDrawerListAdapter;
-import info.androidhive.slidingmenu.model.NavDrawerItem;
 
 import java.util.ArrayList;
+
+import com.jmatharu.easyshop.adapter.NavDrawerListAdapter;
+import com.jmatharu.easyshop.model.NavDrawerItem;
 
 import android.app.Activity;
 import android.app.Fragment;
