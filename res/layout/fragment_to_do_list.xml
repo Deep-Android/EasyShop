@@ -8,7 +8,6 @@
         android:id="@+id/scrollView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true" >
 
         <LinearLayout
@@ -19,34 +18,152 @@
             <TextView
                 android:id="@+id/tVToDo1"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/tVToDo2"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo17"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo18"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo19"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tVToDo20"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5" >
+
+                <EditText
+                    android:id="@+id/eTToDo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:hint="Enter Here"
+                    android:inputType="textMultiLine"
+                    android:lines="2"
+                    android:maxLines="10"
+                    android:scrollbars="vertical" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.5"
+                    android:text="Add" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-    <EditText
-        android:id="@+id/eTToDo"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/scrollView1"
-        android:layout_marginBottom="10dp"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/eTToDo"
-        android:layout_marginLeft="77dp"
-        android:layout_marginTop="26dp"
-        android:text="Button" />
 
 </RelativeLayout>

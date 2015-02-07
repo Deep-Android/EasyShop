@@ -2,7 +2,6 @@ package com.jmatharu.easyshop;
 
 import android.app.Fragment;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -10,7 +9,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 
 public class ToDoListFragment extends Fragment {
 
@@ -48,12 +51,17 @@ public class ToDoListFragment extends Fragment {
 				// TODO Auto-generated method stub
 				String eTString = eTToDo.getText().toString();
 				if (tvTodo1.getText().toString().equals("")) {
-					tvTodo1.setText(eTString);	
+					tvTodo1.setText(eTString);
+					eTToDo.setText("");
 				} else if (tvTodo2.getText().toString().equals("")) {
 					tvTodo2.setText(eTString);
-				} 				
+					eTToDo.setText("");
+				}
 			}
 		});
+
+		
+
 	}
 
 }
